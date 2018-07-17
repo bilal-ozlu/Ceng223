@@ -1,0 +1,131 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+%misc libraries goes here
+\usepackage{tikz}
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name : Bilal Özlü \\
+Id Number : 1942614 \\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+ a) It is reflective. \\
+ For (a,b), in this relation, for every 'a' there is a 'b' such  that a=b, because $\vert$a-b$\vert$=0$<$4 when a=b. \\
+ \\
+ b) It is symmetric. \\
+ If $\vert$a-b$\vert$$<$4, then $\vert$b-a$\vert$$<$4. It means that if (a,b) exists, then (b,a) also exits. \\
+ \\ 
+ c) It is not transitive. \\
+ Assume that the relation contains (a,b),(b,c) and (a,c) such that (a-b)=3, $\vert$3$\vert$$<$4  and (b-c)=2, $\vert$2$\vert$$<$4. So (a-c)=5, but $\vert$5$\vert$$\nless$4. Then (a,c) does not exist in the relation. And it is not transitive. \\
+ 
+\section*{Answer 2}
+ a) In order to be an equivalence relation, T must be reflexive, symmetric and transitive. \\
+ It is reflexive. \\
+ Given a$\in$S, we can clearly see that a/a=1 and it is rational, so aTa. \\
+ \\
+ It is symmetric. \\
+ Assume a,b $\in$S are given and aTb. a/b is a non-zero raitonal number by definition, then it's inverse $\dfrac{1}{a/b}$=b/a is also a rational number. \\
+ \\
+ It is transitive. \\
+ Assume a,b,c are given with aTb, bTc. By definition of T, a/b and b/c are rational numbers. Then, product of them (a/b)$\cdot$(b/c)= a/c is also rational, aTc. \\
+ \\
+ b) We can reach the distinct equivalence classes by providing a representative from each of them. \\
+ Consider the subset A= $\lbrace$k-$\sqrt{5}$ : k is rational$\rbrace$ $\cup$ 1 of S. \\
+ Elements of A represent all distinct equivalence classes of T. \\
+ a=(x-y$\sqrt{5}$) $\in$S. If y=0, then a=x, so a/1=x is also rational and aT1. \\
+ If y$\neq$0 then k=x/y. So we can see that  $\dfrac{a}{k-\sqrt{5}}$ = $\dfrac{x-y\sqrt{5}}{(x/y)-\sqrt{5}}$ = y, so aT(k-$\sqrt{5}$). \\
+ Think that (k-$\sqrt{5}$) and (l-$\sqrt{5}$) are different elements of A. \\
+ Let B = $\dfrac{k-\sqrt{5}}{l-\sqrt{5}}$ = ($\dfrac{k-\sqrt{5}}{l-\sqrt{5}}$)$\cdot$($\dfrac{l+\sqrt{5}}{l+\sqrt{5}}$) = $\dfrac{k \cdot l + \sqrt{5}(k-l)-5}{l^2-5}$ \\
+ We can conclude this as $\sqrt{5}$ = $\dfrac{B \cdot (l^2-5) - k \cdot l + 5}{k-l}$ and it is rational which we know is not the case.\\
+ Therefore, k-$\sqrt{5}$ and l-$\sqrt{5}$ are not equivalent. Also we can see that for every element k-$\sqrt{5}$ of A, k-$\sqrt{5}$/1 = k-$\sqrt{5}$ is also irrational and so k-$\sqrt{5}$ is not equivalent to 1. \\
+ Hence, every two distinct elements of A are not equivalent and represent different classes. \\
+ 
+\section*{Answer 3}
+ Here is the adjaceny matrix for the listing elements of (1,2,3,4).
+ R$_0$ = $\begin{bmatrix}
+       0 & 1 & 0 & 0\\
+       0 & 0 & 0 & 1\\
+       0 & 0 & 0 & 0\\
+       1 & 0 & 1 & 0\\
+     \end{bmatrix}$\\
+ For R$_1$ There is a new path from 1 to 4 going through (1, 2, 4) \\
+ There is a new path from 1 to 3 going through (1, 2, 4, 3) \\
+ There is a new path from 1 to 1 going through (1, 2, 4, 1) \\
+ \\
+ R$_1$ = $\begin{bmatrix}
+       \underline{1} & 1 & \underline{1} & \underline{1} \\
+       0 & 0 & 0 & 1\\
+       0 & 0 & 0 & 0\\
+       1 & 0 & 1 & 0\\
+     \end{bmatrix}$\\
+     \\
+ For R$_2$ There is a new path from 2 to 1 going through (2, 4, 1) \\
+ There is a new path from 2 to 3 going through (2, 4, 3) \\
+ There is a new path from 2 to 2 going through (2, 4, 1, 2) \\
+ R$_2$ = $\begin{bmatrix}
+       1 & 1 & 1 & 1\\
+       \underline{1} & \underline{1} & \underline{1} & 1\\
+       0 & 0 & 0 & 0\\
+       1 & 0 & 1 & 0\\
+     \end{bmatrix}$\\
+     \\
+ For R$_3$ There is no new path from 3. Same. \\
+ R$_3$ = $\begin{bmatrix}
+       1 & 1 & 1 & 1\\
+       1 & 1 & 1 & 1\\
+       0 & 0 & 0 & 0\\
+       1 & 0 & 1 & 0\\
+     \end{bmatrix}$\\
+     \\
+ For R$_4$ There is a new path from 4 to 2 going through (4, 1, 2) \\
+ There is a new path from 4 to 4 going through (4, 1, 2, 4) \\
+ R$_4$ = $\begin{bmatrix}
+       1 & 1 & 1 & 1\\
+       1 & 1 & 1 & 1\\
+       0 & 0 & 0 & 0\\
+       1 & \underline{1} & 1 & \underline{1}\\
+     \end{bmatrix}$\\
+ R$_4$ is the matrix of the transitive closure. \\
+ 
+\section*{Answer 4}
+ a) [54,96,120,144] \\
+ b) [4,18] \\
+ c) No. \\
+ d) No. \\
+ e) [36,72,144] \\
+ f) 36 \\
+ g) [4,8,16,24] \\
+ h) 24 \\
+ 
+\section*{Answer 5}
+ Both have 6 nodes and 8 edges. \\
+ Degrees of G is : [4,3,3,2,2,2,2] in order of (b,a,e,c,d,f)\\
+ Degrees of H is : [4,3,3,2,2,2,2] in order of (q,m,n,o,p,r) \\
+ So their degrees are same and they have the same matrices. \\
+ That means they are isomorphic. \\
+ 
+\section*{Answer 6}
+ a) If they have the same degree for each node, the numbers of edges are equal. \\
+ So, the number of edges are equal from V$_1$ to V$_2$ and from V$_2$ to V$_1$. \\
+ Then, $\mid$ $V_1$ $\mid$ = $\mid$ $V_2$ $\mid$ \\
+ 
+\end{document}
+
+​
+

@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+%misc libraries goes here
+
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name : Bilal Özlü \\
+Id Number : 1942614 \\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+($\overline{A \setminus	B}$)$\cap$($\overline{B \setminus	A}$) \\
+$\lbrace$x $\vert$ $\neg$(x$\in$(A$\setminus$	B))$\cap$ $\neg$(x$\in$(B$\setminus$	A) )$\rbrace$ \\
+$\lbrace$x $\vert$ $\neg$(x$\in$(A	$\cap$  $\overline{B}$))$\cap$ $\neg$(x$\in$(B $\cap$ $\overline{A}$) )$\rbrace$ \\
+$\lbrace$x $\vert$ $\neg$(x$\in$A $\wedge$ x$\notin$B) $\wedge$ $\neg$(x$\in$B $\wedge$ x$\notin$A)$\rbrace$ \\
+$\lbrace$x $\vert$ (x$\notin$A $\vee$ x$\in$B) $\wedge$ (x$\notin$B $\vee$ x$\in$A)$\rbrace$ \\
+$\lbrace$x $\vert$ ((x$\notin$A) $\wedge$ (x$\notin$B $\vee$ x$\in$A)) $\vee$ ((x$\in$B) $\wedge$ (x$\notin$B $\vee$ x$\in$A))$\rbrace$ \\
+$\lbrace$x $\vert$ (((x$\notin$A) $\wedge$ (x$\notin$B)) $\vee$ ((x$\notin$A) $\wedge$ (x$\in$A))) $\vee$ (((x$\in$B) $\wedge$ (x$\notin$B)) $\vee$ ((x$\in$B) $\wedge$ (x$\in$A)))$\rbrace$ \\
+$\lbrace$x $\vert$ ((x$\notin$A) $\wedge$ (x$\notin$B)) $\vee$ ((x$\in$B) $\wedge$ (x$\in$A))$\rbrace$ \\
+$\lbrace$x $\vert$ $\neg$((x$\in$A) $\vee$ (x$\in$B)) $\vee$ ((x$\in$B) $\wedge$ (x$\in$A))$\rbrace$ \\
+$\lbrace$x $\vert$ x$\in$((A$\cap$B)$\cup$($\overline{A	\cup B}$)$\rbrace$ \\
+(A$\cap$B) $\cup$ ($\overline{A	\cup B}$)
+\section*{Answer 2}
+a) \\
+$\lbrace$ a,b $\vert$ (a$\in$ A$\cap$B) $\wedge$ (b$\in$ C$\cap$D)$\rightarrow$ (a$\in$A $\wedge$ b$\in$C)$\cap$(a$\in$B $\wedge$ b$\in$D)$\rbrace$ \\
+$\lbrace$ a,b $\vert$ (a$\in$A $\wedge$ a$\in$B) $\wedge$ (b$\in$C $\wedge$ b$\in$D)$\rightarrow$ (a$\in$A $\wedge$ b$\in$C)$\wedge$(a$\in$B $\wedge$ b$\in$D)$\rbrace$ \\
+$\lbrace$ a,b $\vert$ (a$\in$A) $\wedge$ (b$\in$C) $\wedge$ (a$\in$B) $\wedge$ (b$\in$D)$\rightarrow$ (a$\in$A) $\wedge$ (b$\in$C) $\wedge$ (a$\in$B) $\wedge$ (b$\in$D)$\rbrace$ \\
+b) \\
+Suppose that g is not onto but g$\circ$f is onto \\
+There is an element  $z_{1}$ $\in$Z such that g(y)$\neq$ $z_{1}$ , $\forall$y , y$\in$Y \\
+Suppose $x_{1}$ $\in$X , $y_{1}$ $\in$Y and f($x_{1}$) = $y_{1}$ \\
+g($y_{1}$) $\neq$ $z_{1}$ then g(f($x_{1}$)) $\neq$ $z_{1}$ then g$\circ$f($x_{1}$) $\neq$ $z_{1}$ \\
+$\forall$x , x$\in$X , g$\circ$f(x) $\neq$ $z_{1}$ then g$\circ$f is not onto \\
+It is a contradiction \\
+So, if g$\circ$f is onto, then g must be onto \\
+\section*{Answer 3}
+$\lbrace$x,y $\vert$ f(x)=y , x $\in$ $f^{-1}$(A$\cup$B) , y $\in$(A$\cup$B)$\rbrace$ \\
+(y $\in$ (A$\cup$B)) $\leftrightarrow$ (f(x)$\in$A $\vee$ f(x)$\in$B) \\
+(f(x)$\in$A $\vee$ f(x)$\in$B) $\leftrightarrow$ (x$\in$ $f^{-1}$(A) $\vee$  x$\in$ $f^{-1}$(B)) \\
+(x$\in$ $f^{-1}$(A) $\vee$  x$\in$ $f^{-1}$(B)) = $f^{-1}$(A) $\cup$ $f^{-1}$(B) \\
+\section*{Answer 4}
+a) \\
+n is odd positive, then n=2m+1 m $\in$Z \\
+$n^{2}$-1 = (n-1)(n+1) = (2m)(2m+2) = 4(m)(m+1) \\
+One of (m) and (m+1) is even, then m(m+1) is dividible by 2 \\ 
+4m(m+1) = ($n^{2}$-1) is dividible by 8 \\
+b) \\
+k is an integer, a=2nk+b \\
+$a^{2}$=4$n^{2}$$k^{2}$ + $b^{2}$ + 4nkb \\
+$a^{2}$=4n($k^{2}$+k) + $b^{2}$ \\
+$a^{2}$ $\equiv$ $b^{2}$(mod4n) \\
+\section*{Answer 5}
+
+
+\section*{Answer 6}
+(x.y).(x.z) = lcm(x.y,x.z).gcd(x.y,x.z) \\
+lcm(x.y,x.z) = $x^{2}$.y.z / gcd(x.y,x.z) = $x^{2}$.y.z / x.gcd(y,z) = x.y.z / gcd(y,z) \\
+x.y.z = x.gcd(y,z).lcm(y,z) \\
+x.gcd(y,z).lcm(y,z) / gcd(y,z) = x.lcm(y,z) \\
+
+
+\end{document}
+
+​
+
